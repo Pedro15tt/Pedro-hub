@@ -1,34 +1,3 @@
-local keyGuardLibrary = loadstring(game:HttpGet("https://cdn.keyguardian.org/library/v1.0.0.lua"))()
-local validKey = "Preencha de acordo com Key Guardian"
-local invalidKey = "Preencha de acordo com Key Guardian"
-
-keyGuardLibrary.Set({
-  publicToken = "Preencha de acordo com Key Guardian",
-  privateToken = "Preencha de acordo com Key Guardian",
-  trueData = validKey,
-  falseData = invalidKey,
-})
-
-local OrionLib = loadstring(game:HttpGet(('https://paste.ee/r/E9tFZ/0')))()
-
-function invkey()
-    OrionLib:MakeNotification({
-        Name = "Invalid Key!",
-        Content = "Please make sure that you have the real key!",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
-function corkey()
-    OrionLib:MakeNotification({
-        Name = "Correct Key!",
-        Content = "Loading Your shit",
-        Image = "rbxassetid://4483345998",
-        Time = 5
-    })
-end
-
 local uiScreen = Instance.new("ScreenGui")
 uiScreen.ResetOnSpawn = false -- Persist GUI on respawn
 uiScreen.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
